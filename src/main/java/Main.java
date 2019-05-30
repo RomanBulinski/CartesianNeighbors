@@ -1,26 +1,38 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static int[][] cartesianNeighbor(int x, int y) {
 
-        int[][] result = new int[9][];
+        int[][] result = new int[8][2];
 
         int counter = 0;
-        int counter2 = 0;
-        x = x - 1;
-        y = y - 1;
+        int starty = y - 1;
 
-        while (counter < 9) {
+        while (counter < 8) {
+            int counter2 = 0;
+            int startx = x - 1;
+
             while (counter2 < 3) {
-            result[counter][0] = x;
-            result[counter][1] = y;
-            x++;
+                if( starty==y && startx ==x){
+                    counter--;
+                }
+                result[counter][0] = startx;
+                result[counter][1] = starty;
+                startx++;
                 counter2++;
+                counter++;
             }
-            y++;
-            counter2++;
+            starty++;
         }
         return result;
     }
 
+    public static void main(String[] args) {
+
+        int[][] resultinMain = cartesianNeighbor(2, 2);
+        Arrays.stream(resultinMain).forEach(n -> Arrays.stream(n).forEach(m -> System.out.println(m)));
+
+    }
 
 }
