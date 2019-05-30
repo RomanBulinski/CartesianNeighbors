@@ -1,11 +1,15 @@
 # CartesianNeighbors
 CodeWars cata
 
-A Cartesian coordinate system is a coordinate system that specifies each point uniquely in a plane by a pair of numerical coordinates, which are the signed distances to the point from two fixed perpendicular directed lines, measured in the same unit of length.
+A Cartesian coordinate system is a coordinate system that specifies each point uniquely in a plane by a pair of numerical coordinates, 
+which are the signed distances to the point from two fixed perpendicular directed lines, 
+measured in the same unit of length.
 
-The сoordinates of a point in the grid are written as (x,y). Each point in a coordinate system has eight neighboring points. Provided that the grid step = 1.
+The сoordinates of a point in the grid are written as (x,y). Each point in a coordinate system has eight neighboring points. 
+Provided that the grid step = 1.
 
-It is necessary to write a function that takes a coordinate on the x-axis and y-axis and returns a list of all the neighboring points. Points inside list don't have to been sorted (any order is valid).
+It is necessary to write a function that takes a coordinate on the x-axis and y-axis and returns a list of all the neighboring points. 
+Points inside list don't have to been sorted (any order is valid).
 
 For Example:
 
